@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Registration</title>
+		<link rel="shortcut icon" href=img/innovizelogo.jpg>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+		<style type="text/css">
+		.container{
+			background: #ecf0f1;
+		}
+		#myCard{
+			width: 450px;
+			margin-left: 355px;
+			background: #ffffff;
+		}
+		#myCard:hover{
+		box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
+		transform: translateY(-1%);
+		transition: 0.3s;
+		}
+		.card-content {
+		background: #ffffff;
+		border: 4px;
+		box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+		}
+		.card-img {
+		position: relative;
+		overflow: hidden;
+		border-radius: 0;
+		z-index: 1;
+		}
+		.card-img img {
+		width: 100%;
+		height: 200px;
+		display: block;
+		}
+		.card-desc {
+		padding: 1.25rem;
+		}
+		#mytext{
+		font-size: 20px;
+		color: #10de10!important;
+		margin-left: 5px!important;
+		padding-top: 15px;
+		}
+		</style>
+	</head>
+	<body>
+		<div class="container" action="register.php" method="POST">
+			
+			<div class="card card-media mb-5" id="myCard">
+				<div class="card-img">
+					<img src="img/carousel1.jpg" alt="">
+				</div>
+				<span><h5 class="ml-2" id="mytext"><strong><i>You are successfully registered...</i></strong></h5>
+					<b style="color: #4295ea;margin-left: 10px;">Name :</b><b style="color: #e21414;"><?php echo $name; ?></b><br>
+					<b style="color: #4295ea;margin-left: 10px;">College :</b><b style="color: #e21414;"><?php echo $college; ?></b><br>
+					<b style="color: #4295ea;margin-left: 10px;">Branch :</b><b style="color: #e21414;"><?php echo $branch; ?></b><br>
+					<b style="color: #4295ea;margin-left: 10px;">E-mail :</b><b style="color: #e21414;"><?php echo $email; ?></b><br>
+					<b style="color: #4295ea;margin-left: 10px;">Phone :</b><b style="color: #e21414;"><?php echo $phone; ?></b>
+				</span>
+				<div class="card-desc"><hr>
+					<h6 class="ml-2"><i class="fas fa-clock" style="color: tomato!important;"></i>&nbsp;&nbsp;<b style="color: red;"><i>See you at 9th, 10th, and 11 March.</i></b></h6>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
